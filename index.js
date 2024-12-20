@@ -14,7 +14,7 @@ const links = [
 
 
 const navbar = document.querySelector('#navbar');
-navbar.setAttribute ('style',"height:100%; font-weight:bold; color: #ffffff");
+navbar.setAttribute('style', "height:100%; font-weight:bold; color: #ffffff");
 navbar.classList.add('flex-around');
 // const anchors = document.querySelectorAll('a');
 // console.log(anchors)
@@ -32,7 +32,7 @@ for (let i = 0; i < links.length; i++) {
 
 const allAnchors = navbar.querySelectorAll("a");
 const lastAnchor = allAnchors[allAnchors.length - 1];
-lastAnchor.setAttribute('class','right')
+lastAnchor.setAttribute('class', 'right')
 //console.log("Last anchor tag:", lastAnchor);
 
 const myList = document.querySelector("#div1");

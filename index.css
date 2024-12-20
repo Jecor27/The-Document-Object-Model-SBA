@@ -21,16 +21,18 @@
     background-color: #ddd;
     color: black;
 }
+
 /* selects all elements */
 * {
- margin: 0px;
- padding: 0px;
- box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 /* selecting the highest-level parent element */
 :root {
     --secondary-color: #151226;
-    --contrast-color:#BF307F;
+    --contrast-color: #BF307F;
 }
 
 .overlay {
@@ -89,7 +91,7 @@ p {
 }
 
 .btns {
- 
+
     height: 100%;
     position: relative;
     width: 150px;
@@ -130,27 +132,30 @@ h1 {
 /* using keyframs to assign the animation to the elements */
 @keyframes slideIn {
     0% {
-      transform: translateX(500px) scale(.2);
+        transform: translateX(500px) scale(.2);
     }
+
     100% {
-      transform: translateX(0px) scale(1);
+        transform: translateX(0px) scale(1);
     }
-  }
-  
-  @keyframes slideUp {
+}
+
+@keyframes slideUp {
     0% {
-      transform: translateY(300px);
+        transform: translateY(300px);
     }
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
-  }
-  
-  @keyframes expand {
+}
+
+@keyframes expand {
     0% {
-      transform: translateX(1400px);
+        transform: translateX(1400px);
     }
+
     100% {
-      transform: translateX(0px);
+        transform: translateX(0px);
     }
-  }
+}
