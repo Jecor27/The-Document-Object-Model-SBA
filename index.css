@@ -1,14 +1,15 @@
 #navbar {
     overflow: hidden;
+    height: 100%;
     background-color: #151226;
 }
 
 #navbar a {
     float: left;
     display: block;
-    color: white;
     text-align: center;
-    padding: 14px 20px;
+    font-size: 20px;
+    padding: 25px 30px;
     text-decoration: none;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .container_content {
-    width: 40%;
+    width: 30%;
 }
 
 .container_content-inner {
@@ -88,11 +89,10 @@ p {
 }
 
 .btns {
-    display: flex;
-    flex-direction: row;
+ 
     height: 100%;
-    /* position: relative; */
-    width: 225px;
+    position: relative;
+    width: 150px;
     overflow: hidden;
 }
 
