@@ -1,20 +1,19 @@
-const jokes = ["apples", "oranges", "mango", 'banana', "kiwi", "pineapple"];
+//alert("WELCOME!");
+const jokes = ["apples", "oranges", "mango", 'banana', "kiwi", "pineapple", "apples1", "oranges2", "mango1", 'banana1', "kiwi1", "pineapple1"];
+
 const links = [
-    { text: 'About', href: '#' },
+    { text: 'Want More?', href: 'https://www.nature.org/en-us/about-us/where-we-work/united-states/washington/stories-in-washington/dad-jokes-so-bad-youll-want-to-make-like-a-tree-and-leaf/'},
+
     {
-        text: 'Catalog', href: '#'
-    },
-    {
-        text: 'Orders', href: '#'
-    },
-    {
-        text: 'Account', href: '#'
+        text: "I'm Useless 😞", href: 'index.html'
     },
 ];
 
 
 const navbar = document.querySelector('#navbar');
-navbar.setAttribute('style', "height:100%; font-weight:bold; color: #ffffff");
+//console.log(navbar)
+navbar.setAttribute('style', "font-weight:bold");
+navbar.style.height = "100% !important";
 navbar.classList.add('flex-around');
 // const anchors = document.querySelectorAll('a');
 // console.log(anchors)
@@ -50,5 +49,13 @@ function generateRandomWord() {
 
 }
 generateButton.addEventListener("click", generateRandomWord);
+
+resetButton.addEventListener ("click", () => {
+    let resetjokes = []
+    para.textContent = " ";
+    console.log("Jokes array reset:", jokes);
+})
+
+
 
 
