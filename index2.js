@@ -1,5 +1,5 @@
 //alert("WELCOME!");
-const jokes = ["apples", "oranges", "mango", 'banana', "kiwi", "pineapple", "apples1", "oranges2", "mango1", 'banana1', "kiwi1", "pineapple1"];
+const jokes = ["Why don’t eggs tell jokes?: Because they might crack up.", "oranges", "mango", 'banana', "kiwi", "pineapple", "apples1", "oranges2", "mango1", 'banana1', "kiwi1", "pineapple1"];
 
 const links = [
     { text: 'Want More?', href: 'https://www.nature.org/en-us/about-us/where-we-work/united-states/washington/stories-in-washington/dad-jokes-so-bad-youll-want-to-make-like-a-tree-and-leaf/'},
@@ -35,7 +35,7 @@ lastAnchor.setAttribute('class', 'right')
 //console.log("Last anchor tag:", lastAnchor);
 
 const myList = document.querySelector("#div1");
-const firstElement = myList.firstElementChild;
+const firstElement = myList.firstElementChild;//Use the parent-child-sibling relationship to navigate between elements at least once
 //console.log(firstElement);
 const generateButton = document.getElementById("generateButton");
 const resetButton = document.getElementById("reset-btn");
