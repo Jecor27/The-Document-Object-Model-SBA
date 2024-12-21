@@ -23,7 +23,7 @@ redbutton.addEventListener("click", (e) => {
 });
 redbutton.style.fontSize ="30px";
 L.style.fontSize = "20px"; // Increase the font size
-t.style.width = "500px"; // Set a specific width
+t.style.width = "200px"; // Set a specific width
 t.style.fontSize = "20px"; // Increase the font size
 t.style.padding = "10px"; //padding for more space
 
