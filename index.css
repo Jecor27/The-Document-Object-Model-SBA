@@ -87,18 +87,19 @@
 
 p {
     font-size: 200%;
-    line-height: 30px;
+    line-height: 50px;
     transform: translateY(300px);
     animation: slideUp .8s ease-in-out forwards .8s;
 }
 
 .btns {
-
+    text-align: center;
     height: 100%;
     position: relative;
     width: 150px;
-    overflow: hidden;
+    
 }
+
 
 #generateButton {
     background: transparent;
