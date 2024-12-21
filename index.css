@@ -86,7 +86,8 @@
 }
 
 p {
-    line-height: 28px;
+    font-size: 200%;
+    line-height: 30px;
     transform: translateY(300px);
     animation: slideUp .8s ease-in-out forwards .8s;
 }
