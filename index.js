@@ -9,7 +9,6 @@ const links = [
     },
 ];
 
-
 const navbar = document.querySelector('#navbar');
 //console.log(navbar)
 navbar.setAttribute('style', "font-weight:bold");
@@ -21,13 +20,14 @@ navbar.classList.add('flex-around');
 
 //console.log(navbar)
 
+
 for (let i = 0; i < links.length; i++) {
     let linkElement = document.createElement("a");
     linkElement.setAttribute("href", links[i].href)
     linkElement.textContent = (links[i].text);
     navbar.appendChild(linkElement);
     //console.log(lastElement);
-}
+}//was setting the anchor tag and then appending it to the navbar
 
 const allAnchors = navbar.querySelectorAll("a");
 const lastAnchor = allAnchors[allAnchors.length - 1];
@@ -35,6 +35,8 @@ lastAnchor.setAttribute('class', 'right')
 //console.log("Last anchor tag:", lastAnchor);
 
 const myList = document.querySelector("#div1");
+const firstElement = myList.firstElementChild;
+//console.log(firstElement);
 const generateButton = document.getElementById("generateButton");
 const resetButton = document.getElementById("reset-btn");
 const para = document.querySelector("p");
@@ -47,14 +49,14 @@ function generateRandomWord() {
 
     para.textContent = `Random Word: ${randomWord}`;
 
-}
+}//the idea was to generate a random word as it pulls from the created array
 generateButton.addEventListener("click", generateRandomWord);
 
 resetButton.addEventListener ("click", () => {
     let resetjokes = []
     para.textContent = " ";
     console.log("Jokes array reset:", jokes);
-})
+})//need the reset button to reset the content of text everytime it was clicked
 
 
 
