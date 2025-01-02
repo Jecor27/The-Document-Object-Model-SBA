@@ -13,7 +13,7 @@ redbutton.addEventListener("click", (e) => {
     if (labelText === "") {
         window.location.href = './index.html';
         alert("Please answer the question!!!!! yes or no?");
-    } else if (labelText === "yes") {
+    } else if (labelText == "yes") {
         window.location.href = './index2.html';
 
     } else {
